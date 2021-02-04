@@ -1,0 +1,79 @@
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<title>Contributors</title> 
+
+	<!-- INCLUDING JQUERY-->
+	<script src= 
+"https://code.jquery.com/jquery-3.5.1.js"> 
+	
+	</script>
+
+
+	<!-- CSS FOR STYLING THE PAGE -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+
+<body> 
+	<section> 
+		<h1>Our Contributors</h1> 
+
+		<!-- TABLE CONSTRUCTION-->
+		<table id='table'> 
+			<!-- HEADING FORMATION -->
+			<tr> 
+				<th>Name</th> 
+				<th >Skill #1</th>
+				<th >Skill #2</th>
+				<th>Skill #3</th>
+			</tr> 
+
+			<script> 
+				$(document).ready(function () { 
+
+					// FETCHING DATA FROM JSON FILE 
+					$.getJSON("details.json", 
+							function (data) { 
+						var student = ''; 
+
+						// ITERATING THROUGH OBJECTS 
+						$.each(data, function (key, value) { 
+							
+							student += '<tr>'; 
+							
+							student += '<td>' + 
+								value.Name + '</td>';
+							
+
+							student += '<td>' + 
+								value.skill1 + '</td>'; 
+
+							student += '<td>' + 
+								value.skill2 + '</td>'; 
+
+							student += '<td>' + 
+								value.skill3 + '</td>'; 
+
+							student += '</tr>'; 
+						}); 
+						
+						//INSERTING ROWS INTO TABLE 
+						$('#table').append(student); 
+					}); 
+				}); 
+			</script> 
+	</section> 
+
+	
+</body> 
+
+</html> 
+
+
+<!--
+
+	References:
+	https://codepen.io/jdfd/pen/eVodJz
+	https://codepen.io/beben-koben/pen/iCIna
+-->

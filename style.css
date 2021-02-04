@@ -1,0 +1,135 @@
+body {
+  background-color:#f9dfe7;
+  -webkit-animation: random 5s infinite;
+  animation: random1 5s infinite;
+}
+@keyframes  random1 {
+ 15% { background-color:#f5cfda; } 
+ 30% { background-color: #efaec1; } 
+ 
+}
+
+h1{
+    text-align: center;
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s ease-out;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  80% {
+    transform: translateX(10px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f9dfe7;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  td:hover{
+ 
+
+    color: #f1f1f1;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  
+  }
+  td:hover {
+    background-color:#efaec1;
+    -webkit-animation: random 5s infinite;
+    animation: random 5s infinite;
+  }
+  @keyframes  random {
+    15% { background-color: #c52856; } 
+    30% { background-color: #db4d77; } 
+    45% { background-color: #e88ea8 } 
+    60% { background-color:#e16d8f; }
+    75% { background-color:#efaec1; } 
+  }
