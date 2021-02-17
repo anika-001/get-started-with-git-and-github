@@ -1,6 +1,7 @@
 [
     {"Name":"User-1","skill1":"Css","skill2":"CP","skill3":"C++"},
     {"Name":"Aanchal Mishra","skill1":"python","skill2":"Machine learning","skill3":"C++"},
-    {"Name":"Anika Tibrewala","skill1":"Css","skill2":"CP","skill3":"C++"}
-
+    {"Name":"Anika Tibrewala","skill1":"GCP","skill2":"CP","skill3":"Web Dev"},
+    {"Name":"Aayush Jain","skill1":"JavaScript","skill2":"C++","skill3":"Nodejs"}
 ]
+
